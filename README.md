@@ -1,3 +1,17 @@
+# gRPC Setup for MacOS
+
+```mvn install:install-file -DgroupId=io.grpc -DartifactId=protoc-gen-grpc-java -Dversion=1.34.0 -Dclassifier=osx-x86_64 -Dpackaging=exe -Dfile=bin/protoc-gen-grpc-java-1.34.0-osx-x86_64.exe
+```
+
+```
+mvn install:install-file -DgroupId=com.google.protobuf -DartifactId=protoc -Dversion=3.13.0 -Dclassifier=osx-x86_64 -Dpackaging=exe -Dfile=bin/protoc-3.13.0-osx-x86_64.exe
+```
+
+For JDK11.02 PSK error:
+```
+mvn compile -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2
+```
+
 # code-with-quarkus project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
