@@ -1,6 +1,7 @@
 # gRPC Setup for MacOS
 
-```mvn install:install-file -DgroupId=io.grpc -DartifactId=protoc-gen-grpc-java -Dversion=1.34.0 -Dclassifier=osx-x86_64 -Dpackaging=exe -Dfile=bin/protoc-gen-grpc-java-1.34.0-osx-x86_64.exe
+```
+mvn install:install-file -DgroupId=io.grpc -DartifactId=protoc-gen-grpc-java -Dversion=1.34.0 -Dclassifier=osx-x86_64 -Dpackaging=exe -Dfile=bin/protoc-gen-grpc-java-1.34.0-osx-x86_64.exe
 ```
 
 ```
